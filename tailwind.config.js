@@ -1,3 +1,6 @@
 module.exports = {
-    mode: 'jit'
+  mode: 'jit',
+  theme: {},
+  variants: {},
+  plugins: []
 }
