@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style scoped>
-  .main-layout {
-    background-color: #F7F4EC;
-    height: 100vh;
-  }
+  /*.main-layout {*/
+  /*  background-color: #F7F4EC;*/
+  /*  height: 100vh;*/
+  /*}*/
 </style>

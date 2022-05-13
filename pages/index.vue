@@ -1,6 +1,9 @@
 <template>
   <Layout>
     <Header />
+    <Container>
+      <Content></Content>
+    </Container>
   </Layout>
 </template>
 
