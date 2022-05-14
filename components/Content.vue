@@ -22,18 +22,17 @@
             <div class="text-center lg:text-right shrink">
               <h3>คนท้องถิ่น</h3>
               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li>ต้องการแก้ปัญหาเพื่อท้องถิ่นตนเอง โดยเข้าใจสภาพปัญหาหรือได้รับผลกระทบโดยตรงจากการกัดเซาะทางชายฝั่งทะเล</li>
               </ul>
             </div>
             <img class="order-first lg:order-last md:w-[245px] w-[122px]" src="~/assets/content/illustrations.png">
           </div>
           <div class="flex flex-col lg:flex-row gap-x-4 gap-y-4 items-center">
             <div class="text-center lg:text-right">
-              <h3>นักสร้าง</h3>
+              <h3>นักออกแบบ</h3>
               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li>รักการออกแบบเพื่อเน้นการฟื้นฟูชายฝั่งที่ถูกกัดเซาะและเพิ่มประสบการณ์ใหม่ให้คนท้องถิ่น นักท่องเที่ยวและสิ่งแวดล้อม</li>
+
               </ul>
             </div>
             <img class="order-first lg:order-last md:w-[245px] w-[122px]" src="~/assets/content/illustrations-(1).png">
@@ -43,10 +42,10 @@
           <div class="flex flex-col lg:flex-row gap-x-4 gap-y-4 items-center">
             <img class="md:w-[245px] w-[122px]" src="~/assets/content/illustrations-(2).png">
             <div class="text-center lg:text-left">
-              <h3>คนท้องถิ่น</h3>
+              <h3>นักวางแผน</h3>
               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li>ชื่นชอบการวิเคราะห์และวางแผนจัดการชายฝั่งยั่งยืนในระยะยาว</li>
+
               </ul>
             </div>
           </div>
@@ -54,17 +53,16 @@
             <div class="flex flex-col lg:flex-row gap-y-4 gap-x-4 items-center">
               <img class="md:w-[245px] w-[122px]" src="~/assets/content/illustrations-(3).png">
               <div class="text-center lg:text-left">
-                <h3>นักสร้าง</h3>
+                <h3>นักวิทยาศาสตร์</h3>
                 <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>เล็งเห็นโอกาสในการนำความรู้และความหลงใหลในด้านการจัดการชายฝั่งยั่งยืนมาลงมือทำงานจริง</li>
+
                 </ul>
               </div>
             </div>
             <div class="bg-[#C8A95E] rounded-full mt-12 relative">
               <p class="text-md md:text-xl text-white font-bold p-3 md:py-4 md:pl-4 md:pr-2 text-center md:text-left">
-              ไม่จำเป็นต้องกัวล!<br />
-              เพียงสมัคร เราจะแมชทีมหลากหลายสกิลให้
+                ไม่ว่าคุณจะเป็นใครหรือมีความรู้ในสาขาไหน หากคุณเป็นอีกหนึ่งคนที่อยากมีส่วนร่วมในการแก้ปัญหาด้านชายฝั่งทะเล เราต้องการคุณ!
               </p>
               <div class="arrow-up"></div>
             </div>
@@ -136,7 +134,9 @@
       <h1 class="text-[#00BFA6] text-center">รางวัล</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 text-center items-center">
         <img src="~/assets/content/human-right-3.png">
-        <span class="text-xl md:text-2xl text-[#C8A95E]">รอไฟนอลรางวัล <br />เดี๋ยวจะดีไซน์เพิ่ม</span>
+        <span class="text-xl md:text-2xl text-[#C8A95E]">
+          รางวัลรวมมูลค่า 100,000 บาท
+        </span>
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
@@ -200,18 +200,18 @@ export default {
       problemStatement: [
         {
           img: Sea,
-          title: '#กำแพงกันคลื่น',
-          detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc donec sit id nunc lectus. Massa neque, velit magna rhoncus lacinia.'
+          title: '#คลื่นกัดเซาะชายฝั่ง',
+          detail: 'สภาวะอากาศที่เปลี่ยนไป น้ำทะเลที่สูงขึ้น ภัยพิบัติทางธรรมชาติ รวมไปถึงสิ่งก่อสร้างจากมนุษย์ล้วนมีผลต่อการเกิดคลื่นกัดเซาะชายฝั่งที่ส่งผลต่อทั้งผู้คน สังคม และสิ่งมีชีวิตบริเวณชายฝั่ง'
         },
         {
           img: Sea,
-          title: '#กำแพงกันคลื่น',
-          detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc donec sit id nunc lectus. Massa neque, velit magna rhoncus lacinia.'
+          title: '#เขื่อนกันคลื่น',
+          detail: 'โครงสร้างคอนกรีตที่ถูกสร้างขึ้นตามแนวชายฝั่ง อาจช่วยป้องกันการกัดเซาะในพื้นที่หนึ่ง แต่อาจสร้างปัญหาให้อีกพื้นที่หนึ่ง จากทิศทางของคลื่นเปลี่ยนไป จนทำให้เกิดการเลี้ยวเบนของกระแสน้ำเมื่อสิ้นสุดแนวเขื่อนกันคลื่น'
         },
         {
           img: Sea,
-          title: '#กำแพงกันคลื่น',
-          detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc donec sit id nunc lectus. Massa neque, velit magna rhoncus lacinia.'
+          title: '#กำแพงกันคลื่นแบบขั้นบันได',
+          detail: 'ระบบนิเวศน์บริเวณชายหาดที่เปลี่ยนไป สัตว์ทะเลไม่สามารถขึ้นมาวางไข่ได้ นักท่องเที่ยวอาจเกิดอุบัติเหตุจากตะไคร่น้ำบริเวณขั้นบันได และการทำมาค้าขายของคนท้องถิ่นที่ได้รับผลกระทบ'
         }
       ],
       partnerLogo: [
@@ -268,39 +268,39 @@ export default {
         },
         {
           img: AnnProfile,
-          name: 'Hongsvinitkul',
+          name: 'Arriya Hongsvinitkul',
           nickname: 'Ann',
           position: 'Project Expertise',
-          degree: '1deg'
-        },
-        {
-          img: PhillipProfile,
-          name: 'Putthisak Panomsarnnarin',
-          nickname: 'Phillip',
-          position: 'Public Relations',
           degree: '2deg'
         },
+        // {
+        //   img: PhillipProfile,
+        //   name: 'Putthisak Panomsarnnarin',
+        //   nickname: 'Phillip',
+        //   position: 'Public Relations',
+        //   degree: '2deg'
+        // },
         {
           img: RoseProfile,
           name: 'Punnapa Yoswaris',
           nickname: 'Rose',
-          position: 'Content Creator',
+          position: 'Social Media and Content Lead',
           degree: '0deg'
         },
         {
           img: PraewProfile,
           name: 'Butsakan Nuankew',
           nickname: 'Praew',
-          position: 'Designer',
+          position: 'Design Lead',
           degree: '-2deg'
         },
-        {
-          img: IttProfile,
-          name: 'Lorem ipsum',
-          nickname: 'Itt',
-          position: 'Specialist',
-          degree: '1deg'
-        },
+        // {
+        //   img: IttProfile,
+        //   name: 'Lorem ipsum',
+        //   nickname: 'Itt',
+        //   position: 'Specialist',
+        //   degree: '1deg'
+        // },
       ],
       registrationLink: 'https://bit.ly/3OM9tsk'
     }
