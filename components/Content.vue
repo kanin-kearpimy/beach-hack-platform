@@ -168,7 +168,7 @@
           <a class="block" href="#contact-us-email">Hackathon Thailand</a>
         </div>
         <h1 class="text-[#00BFA6] text-center">หรือ</h1>
-        <a class="w-[120px] block border border-1 border-black rounded-md py-2 px-4 text-xl mx-auto">สมัครเลย!</a>
+        <a :href="registrationLink" class="w-[120px] block border border-1 border-black rounded-md py-2 px-4 text-xl mx-auto">สมัครเลย!</a>
       </div>
     </section>
   </div>
@@ -301,7 +301,8 @@ export default {
           position: 'Specialist',
           degree: '1deg'
         },
-      ]
+      ],
+      registrationLink: 'https://bit.ly/3OM9tsk'
     }
   },
 }

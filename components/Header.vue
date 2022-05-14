@@ -7,7 +7,7 @@
         <p class="mb-4">
           “ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท”
         </p>
-        <a class="block border border-1 border-white rounded-md py-2 px-4 text-xl">สมัคร</a>
+        <a :href="registrationLink" class="block border border-1 border-white rounded-md py-2 px-4 text-xl">สมัคร</a>
       </div>
     </div>
     <div class="hidden md:grid grid-cols-2 gab-2 m-2 pr-4 relative top-[30%] translate-y-[-35%] ">
@@ -18,7 +18,7 @@
             “ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท”
           </p>
           <div class="text-right text-xl">
-            <a class="border border-1 border-white rounded-md py-2 px-4">สมัคร</a>
+            <a :href="registrationLink" class="border border-1 border-white rounded-md py-2 px-4">สมัคร</a>
           </div>
         </div>
       </div>
@@ -31,7 +31,12 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      registrationLink: 'https://bit.ly/3OM9tsk'
+    }
+  }
 }
 </script>
 

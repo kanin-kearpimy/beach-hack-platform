@@ -18,15 +18,15 @@ export default {
       menuItem: [
         {
           text: "รายละเอียดงาน",
-          link: "#"
+          link: "#timeline"
         },
         {
           text: "รางวัล",
-          link: "#"
+          link: "#reward"
         },
         {
           text: "ทีมงาน",
-          link: "#"
+          link: "#team"
         },
         {
           text: "FAQ",
