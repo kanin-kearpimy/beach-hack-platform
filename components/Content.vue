@@ -62,7 +62,7 @@
             </div>
             <div class="bg-[#C8A95E] rounded-full mt-12 relative">
               <p class="text-md md:text-xl text-white font-bold p-3 md:py-4 md:pl-4 md:pr-2 text-center md:text-left">
-                ไม่ว่าคุณจะเป็นใครหรือมีความรู้ในสาขาไหน หากคุณเป็นอีกหนึ่งคนที่อยากมีส่วนร่วมในการแก้ปัญหาด้านชายฝั่งทะเล เราต้องการคุณ!
+                นอกจากนี้ไม่ว่าคุณจะเป็นใครหรือมีความรู้ในสาขาไหน หากคุณเป็นอีกหนึ่งคนที่อยากมีส่วนร่วมในการแก้ปัญหาด้านชายฝั่งทะเล เราต้องการคุณ!
               </p>
               <div class="arrow-up"></div>
             </div>
@@ -324,9 +324,28 @@ export default {
     border-bottom: 30px solid #C8A95E;
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 320px) {
     .arrow-up {
-      bottom: 70px;
+      bottom: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) and (min-width: 321px) {
+    .arrow-up {
+      bottom: 90px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .arrow-up {
+      bottom: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 1440px) and (min-width: 1024px) {
+    .arrow-up {
+      bottom: 115px;
     }
   }
 </style>
