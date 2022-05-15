@@ -291,7 +291,7 @@ export default {
           img: AnnProfile,
           name: 'Arriya Hongsvinitkul',
           nickname: 'Ann',
-          position: 'Project Expertise',
+          position: 'Project Expert',
           degree: '2deg'
         },
         // {
