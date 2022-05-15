@@ -4,7 +4,7 @@
       <img src="~/assets/loading.gif" >
     </div>
     <Header :reachContainer="reachContainer" :handleLoading="loadedImg" />
-    <Container ref="sa">
+    <Container ref="container">
       <Content></Content>
     </Container>
   </Layout>
@@ -29,7 +29,8 @@ export default Vue.extend({
   },
   methods: {
     handleScroll () {
-      if(window.scrollY >= this.$refs.sa.$el.offsetTop - 50) {
+      const containerRef = this.$refs.container as any
+      if(window.scrollY >= containerRef.$el.offsetTop - 50) {
         this.reachContainer = true
       }else {
         this.reachContainer = false
