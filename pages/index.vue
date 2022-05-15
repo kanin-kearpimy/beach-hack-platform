@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <Header :reachContainer="reachContainer" />
+    <div class="overlay" v-if="!loaded">
+      <img src="~/assets/loading.gif" >
+    </div>
+    <Header :reachContainer="reachContainer" :handleLoading="loadedImg" />
     <Container ref="sa">
       <Content></Content>
     </Container>
@@ -14,7 +17,8 @@ export default Vue.extend({
   name: 'IndexPage',
   data() {
     return {
-      reachContainer: false
+      reachContainer: false,
+      loaded: false,
     }
   },
   created() {
@@ -30,7 +34,30 @@ export default Vue.extend({
       }else {
         this.reachContainer = false
       }
+    },
+    loadedImg() {
+      this.loaded = true;
     }
   }
 })
 </script>
+
+<style scoped>
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99;
+}
+
+.overlay img {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

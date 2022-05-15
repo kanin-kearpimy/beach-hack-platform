@@ -2,20 +2,20 @@
   <div class="header">
     <MainNavigation :reach="reachContainer" :link="registrationLink" />
     <div class="flex flex-col hero p-4 m-4 rounded-lg md:hidden">
-      <img class="w-full" src="~/assets/header/header-beach-hack.png" />
+      <img class="w-full" src="~/assets/header/header-beach-hack.png" @load="loading" />
       <div class="mt-4 text-center text-white">
         <p class="mb-4">
-          “ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท”
+          ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท
         </p>
         <a :href="registrationLink" class="block border border-1 border-white rounded-md py-2 px-4 text-xl">สมัคร</a>
       </div>
     </div>
     <div class="hidden md:grid grid-cols-2 gab-2 m-2 pr-4 relative top-[30%] translate-y-[-35%] ">
       <div class="col-start-2 flex flex-col">
-        <img class="w-full" src="~/assets/header/header-beach-hack.png" />
+        <img class="w-full" src="~/assets/header/header-beach-hack.png" @load="loading" />
         <div class="mt-4 text-white">
           <p class="mb-4 text-right">
-            “ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท”
+            ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท
           </p>
           <div class="text-right text-xl">
             <a :href="registrationLink" class="border border-1 border-white rounded-md py-2 px-4">สมัคร</a>
@@ -29,10 +29,15 @@
 <script>
 export default {
   name: "Header",
-  props: { reachContainer: Boolean },
+  props: { reachContainer: Boolean, handleLoading: Function },
   data() {
     return {
       registrationLink: 'https://bit.ly/3OM9tsk'
+    }
+  },
+  methods: {
+    loading() {
+      this.handleLoading()
     }
   }
 }
