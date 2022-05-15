@@ -1,7 +1,10 @@
 <template>
   <div class="content flex flex-col gap-y-11">
-    <section id="problem-statement" class="flex flex-col gap-y-4 items-center">
-      <h1 class="text-[#00BFA6] text-center">ปัญหาที่เราช่วยกันแก้ไขได้</h1>
+    <section id="problem-statement" class="flex flex-col gap-y-12 items-center">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">ปัญหาที่เราช่วยกันแก้ไขได้</h1>
+        <img src="~/assets/content/underline.png" class="absolute">
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
         <div
           v-for="problem in problemStatement"
@@ -14,8 +17,11 @@
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="how-participate" class="flex flex-col items-center">
-      <h1 class="text-[#00BFA6] text-center mb-4">แก้ไขได้ในฐานะใดบ้าง</h1>
+    <section id="how-participate" class="flex flex-col items-center gap-y-12">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">แก้ไขได้ในฐานะใดบ้าง</h1>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
+      </div>
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="flex flex-col gap-y-4 lg:mr-8">
           <div class="flex flex-col lg:flex-row gap-x-4 gap-y-4 items-center">
@@ -71,17 +77,21 @@
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="partner-logo" class="flex flex-col gap-y-6 items-center p-4">
-      <h1 class="text-[#00BFA6] text-center">พาร์ทเนอร์</h1>
+    <section id="partner-logo" class="flex flex-col gap-y-12 items-center p-4">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">พาร์ทเนอร์</h1>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
+      </div>
       <div class="grid grid-cols-2 gap-8 md:grid-cols-4 text-center justify-content-center items-center">
         <img v-for="logo in partnerLogo" v-bind:key="logo.id" :src="logo.img" class="mx-auto">
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="timeline" class="flex flex-col gap-y-6 p-2">
-      <div class="flex flex-col">
+    <section id="timeline" class="flex flex-col gap-y-12 p-2">
+      <div class="relative topic-header-wrapper">
         <h1 class="text-[#00BFA6] text-center">รายละเอียดงาน</h1>
         <h4 class="text-[#00BFA6] text-center">ระยะเวลา + กติกาการสมัคร</h4>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
       </div>
       <div class="flex flex-col gap-y-2">
         <div class="grid grid-cols-12">
@@ -130,8 +140,11 @@
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="reward" class="flex flex-col gap-y-6 p-2 items-center">
-      <h1 class="text-[#00BFA6] text-center">รางวัล</h1>
+    <section id="reward" class="flex flex-col gap-y-12 p-2 items-center">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">รางวัล</h1>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 text-center items-center">
         <img src="~/assets/content/human-right-3.png">
         <span class="text-xl md:text-2xl text-[#C8A95E]">
@@ -140,8 +153,11 @@
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="team" class="flex flex-col gap-y-6 p-2 items-center">
-      <h1 class="text-[#00BFA6] text-center">ทีมงาน</h1>
+    <section id="team" class="flex flex-col gap-y-12 p-2 items-center">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">ทีมงาน</h1>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
+      </div>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div v-for="member in teamMembers" class="text-center">
           <div class="mini-card flex flex-col bg-white p-4" :style="`transform: rotate(${member.degree})`">
@@ -156,8 +172,11 @@
       </div>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
-    <section id="contact-us" class="flex flex-col gap-y-6 p-2 items-center">
-      <h1 class="text-[#00BFA6] text-center">ติดต่อเรา</h1>
+    <section id="contact-us" class="flex flex-col gap-y-12 p-2 items-center">
+      <div class="relative topic-header-wrapper">
+        <h1 class="text-[#00BFA6] text-center">ติดต่อเรา</h1>
+        <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
+      </div>
       <div class="flex flex-col border border-1 border-black rounded-lg p-8 gap-6">
         <img class="w-[300px]" src="~/assets/content/beach-hack.png">
         <div id="contact-us-email">
@@ -167,7 +186,9 @@
           <img src="~/assets/icons/facebook.png" class="w-[28px]" />
           <a class="block" href="#contact-us-email">Hackathon Thailand</a>
         </div>
-        <h1 class="text-[#00BFA6] text-center">หรือ</h1>
+        <div class="topic-header-wrapper">
+          <h1 class="text-[#00BFA6] text-center">หรือ</h1>
+        </div>
         <a :href="registrationLink" class="w-[120px] block border border-1 border-black rounded-md py-2 px-4 text-xl mx-auto">สมัครเลย!</a>
       </div>
     </section>
@@ -328,11 +349,19 @@ export default {
     .arrow-up {
       bottom: 110px;
     }
+
+    .topic-header-wrapper h1 {
+      font-size: 1.65rem;
+    }
   }
 
   @media only screen and (max-width: 425px) and (min-width: 321px) {
     .arrow-up {
       bottom: 90px;
+    }
+
+    .topic-header-wrapper h1 {
+      font-size: 1.85rem;
     }
   }
 

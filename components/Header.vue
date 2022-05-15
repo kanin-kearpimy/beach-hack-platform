@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <MainNavigation />
-    <div class="flex flex-col p-4 hero m-4 rounded-lg md:hidden">
+    <MainNavigation :reach="reachContainer" :link="registrationLink" />
+    <div class="flex flex-col hero p-4 m-4 rounded-lg md:hidden">
       <img class="w-full" src="~/assets/header/header-beach-hack.png" />
       <div class="mt-4 text-center text-white">
         <p class="mb-4">
@@ -23,15 +23,13 @@
         </div>
       </div>
     </div>
-<!--    <div>-->
-<!--      <a class="border border-1 border-white rounded-md py-2 px-4 text-white text-lg">สมัคร</a>-->
-<!--    </div>-->
   </div>
 </template>
 
 <script>
 export default {
   name: "Header",
+  props: { reachContainer: Boolean },
   data() {
     return {
       registrationLink: 'https://bit.ly/3OM9tsk'
@@ -46,6 +44,7 @@ export default {
   background-repeat: no-repeat;
   background-image: url("assets/header/header-bg.png");
   background-size: 100% 100%;
+  display: table;
 }
 
 .hero {
