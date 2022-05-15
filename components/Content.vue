@@ -15,6 +15,7 @@
           <p>{{ problem.detail }}</p>
         </div>
       </div>
+      <a class="text-[#C8A95E] underline-offset-2 underline" href="https://www.facebook.com/Beachforlife.BFL/">ขอบคุณภาพจากเพจ 'Beach for Life'</a>
     </section>
     <img class="block mx-auto" src="~/assets/content/divider.png">
     <section id="how-participate" class="flex flex-col items-center gap-y-12">
@@ -196,7 +197,9 @@
 </template>
 
 <script>
-import Sea from 'assets/content/sea.png';
+import LadderProblem from 'assets/content/ladder-problem.png';
+import DamProblem from 'assets/content/dam-problem.png';
+import ErosionProblem from 'assets/content/erosion-problem.png';
 import SpsLogo from 'assets/content/sps.png';
 import YsealiLogo from 'assets/content/yseali.png';
 import USFlag from 'assets/content/us-flag.png';
@@ -220,17 +223,17 @@ export default {
     return {
       problemStatement: [
         {
-          img: Sea,
+          img: LadderProblem,
           title: '#คลื่นกัดเซาะชายฝั่ง',
           detail: 'สภาวะอากาศที่เปลี่ยนไป น้ำทะเลที่สูงขึ้น ภัยพิบัติทางธรรมชาติ รวมไปถึงสิ่งก่อสร้างจากมนุษย์ล้วนมีผลต่อการเกิดคลื่นกัดเซาะชายฝั่งที่ส่งผลต่อทั้งผู้คน สังคม และสิ่งมีชีวิตบริเวณชายฝั่ง'
         },
         {
-          img: Sea,
+          img: DamProblem,
           title: '#เขื่อนกันคลื่น',
           detail: 'โครงสร้างคอนกรีตที่ถูกสร้างขึ้นตามแนวชายฝั่ง อาจช่วยป้องกันการกัดเซาะในพื้นที่หนึ่ง แต่อาจสร้างปัญหาให้อีกพื้นที่หนึ่ง จากทิศทางของคลื่นเปลี่ยนไป จนทำให้เกิดการเลี้ยวเบนของกระแสน้ำเมื่อสิ้นสุดแนวเขื่อนกันคลื่น'
         },
         {
-          img: Sea,
+          img: ErosionProblem,
           title: '#กำแพงกันคลื่นแบบขั้นบันได',
           detail: 'ระบบนิเวศน์บริเวณชายหาดที่เปลี่ยนไป สัตว์ทะเลไม่สามารถขึ้นมาวางไข่ได้ นักท่องเที่ยวอาจเกิดอุบัติเหตุจากตะไคร่น้ำบริเวณขั้นบันได และการทำมาค้าขายของคนท้องถิ่นที่ได้รับผลกระทบ'
         }
