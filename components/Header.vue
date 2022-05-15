@@ -1,13 +1,10 @@
 <template>
-  <div class="header">
+  <div class="header relative">
     <MainNavigation :reach="reachContainer" :link="registrationLink" />
-    <div class="flex flex-col hero p-4 m-4 rounded-lg md:hidden">
-      <img class="w-full" src="~/assets/header/header-beach-hack.png" @load="loading" />
-      <div class="mt-4 text-center text-white">
-        <p class="mb-4">
-          ขอเชิญชวนคนรุ่นใหม่ที่มีใจอนุรักษ์ชายฝั่งทะเลไทย เข้าร่วม /Beach Hack เพื่อหาแนวทางแก้ไขปัญหาชายฝั่งทะเลไทยอย่างยั่งยืน โอกาสในการร่วม Hack กันริมชายหาดและชิงเงินรางวัลรวมมูลค่า 100,000 บาท
-        </p>
-        <a :href="registrationLink" class="block border border-1 border-white rounded-md py-2 px-4 text-xl">สมัคร</a>
+    <div class="flex flex-col p-4 m-4 rounded-lg md:hidden">
+      <div class="absolute bottom-[20%] flex flex-col gap-y-2 items-end">
+        <img class="w-full" src="~/assets/header/header-beach-hack.png" @load="loading" />
+        <a :href="registrationLink" class="w-[100px] border border-1 border-white text-white text-center rounded-md py-2 px-4 text-xl">สมัคร</a>
       </div>
     </div>
     <div class="hidden md:grid grid-cols-2 gab-2 m-2 pr-4 relative top-[30%] translate-y-[-35%] ">
@@ -27,6 +24,8 @@
 </template>
 
 <script>
+import bgImage from "assets/header/header-bg.png"
+
 export default {
   name: "Header",
   props: { reachContainer: Boolean, handleLoading: Function },
@@ -39,7 +38,7 @@ export default {
     loading() {
       this.handleLoading()
     }
-  }
+  },
 }
 </script>
 
@@ -62,6 +61,7 @@ export default {
 
 @media only screen and (max-width: 425px) {
   .header {
+    width: 100%;
     height: 755px;
     background-repeat: no-repeat;
     background-image: url("assets/header/header-mobile-bg.png");

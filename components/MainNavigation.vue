@@ -1,14 +1,16 @@
 <template>
   <div
-    class="flex flex-row fixed top-0 right-0 w-full p-4"
+    class="flex flex-row fixed top-0 right-0 w-full p-4 items-center"
     :class="`${reach ? 'justify-between' : 'justify-end'}`"
   >
-    <img v-if="reach" src="~/assets/beach-hack-logo.png" class="h-[45px]">
+    <div>
+      <img v-if="reach" src="~/assets/beach-hack-logo.png" class="h-[45px] hidden md:block">
+    </div>
     <div class="flex flex-row md:flex-row main-menu items-center justify-end">
       <a :href="menu.link"
          v-bind:key="menu.text"
          v-for="menu in menuItem"
-         class="menu-item mr-[12px] md:mr-[40px]"
+         class="menu-item mr-[8px] md:mr-[40px]"
          :class="`${reach ? 'text-black' : 'text-white'}`"
       >
         {{ menu.text }}
@@ -40,10 +42,10 @@ export default {
           text: "ทีมงาน",
           link: "#team"
         },
-        {
-          text: "FAQ",
-          link: "#"
-        },
+        // {
+        //   text: "FAQ",
+        //   link: "#"
+        // },
       ]
     }
   },
