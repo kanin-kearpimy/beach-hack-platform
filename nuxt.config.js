@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'beach-hack-platform',
+    title: 'Beach Hack - ร่วมแก้ไขปัญหาชายฝั่งถูกกัดเซาะกันได้ที่นี้!!!',
     htmlAttrs: {
       lang: 'en'
     },
