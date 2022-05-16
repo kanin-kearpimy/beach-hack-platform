@@ -2,7 +2,7 @@
   <div class="content flex flex-col gap-y-11">
     <section id="problem-statement" class="flex flex-col gap-y-12 items-center">
       <div class="relative topic-header-wrapper">
-        <h1 class="text-[#00BFA6] text-center">ปัญหาที่เราช่วยกันแก้ไขได้</h1>
+        <h1 class="text-[#00BFA6] text-center">ตัวอย่างปัญหา</h1>
         <img src="~/assets/content/underline.png" class="absolute">
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -20,7 +20,7 @@
     <img class="block mx-auto" src="~/assets/content/divider.png">
     <section id="how-participate" class="flex flex-col items-center gap-y-12">
       <div class="relative topic-header-wrapper">
-        <h1 class="text-[#00BFA6] text-center">แก้ไขได้ในฐานะใดบ้าง</h1>
+        <h1 class="text-[#00BFA6] text-center">เราต้องการคุณ</h1>
         <img src="~/assets/content/underline.png" class="absolute left-[50%] translate-x-[-50%]">
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -215,7 +215,7 @@ import AnnProfile from 'assets/team-members/ann-profile.jpg';
 import PhillipProfile from 'assets/team-members/blank-profile.png';
 import RoseProfile from 'assets/team-members/rose-profile.jpg';
 import PraewProfile from 'assets/team-members/praew-profile.jpeg';
-import IttProfile from 'assets/team-members/blank-profile.png';
+import IttProfile from 'assets/team-members/itt-profile.jpeg';
 
 export default {
   name: 'Content',
@@ -318,13 +318,13 @@ export default {
           position: 'Design Lead',
           degree: '-2deg'
         },
-        // {
-        //   img: IttProfile,
-        //   name: 'Lorem ipsum',
-        //   nickname: 'Itt',
-        //   position: 'Specialist',
-        //   degree: '1deg'
-        // },
+        {
+          img: IttProfile,
+          name: 'Patiparn Boontarig',
+          nickname: 'Itt',
+          position: 'Project Advisor',
+          degree: '1deg'
+        },
       ],
       registrationLink: 'https://bit.ly/3OM9tsk'
     }
