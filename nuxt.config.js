@@ -12,8 +12,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: "msapplication-TileColor", content: "#da532c" },
       { name: "theme-color", content:"#ffffff" },
-      { property: "og:image", content: "/header.png" },
-      { property: "og:image:secure_url", content: "/header.png" },
+      { property: "og:image", content: "/thumbnail-web.png" },
+      { property: "og:image:secure_url", content: "/thumbnail-web.png" },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
